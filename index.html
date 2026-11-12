@@ -1,0 +1,643 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>Mercedes Classic Cars - renowacja i sprzedaż klasycznych Mercedesów | Tomasz Filipowicz</title>
+<meta name="description" content="Klasyczne Mercedesy z lat 1950-1975: wyszukujemy, odbudowujemy z zachowaniem 100% oryginalności i sprzedajemy. 190 SL, 280 SL Pagoda, 300 SL. Warszawa, tel. +48 727 001 122.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-m.webp" media="(max-width:760px)">
+<link rel="preload" as="image" href="img/hero.webp" media="(min-width:761px)">
+<style>
+:root{--ink:#141414;--txt:#2b2d30;--mut:#5d6166;--gold:#8A5B16;--gold2:#A67A30;--goldL:#D1A35A;--bg:#fff;--gray:#F2F3F4;--line:#E2E4E7;--hdr:64px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--txt);font:17px/1.6 Lato,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;color:var(--ink);line-height:1.12;margin:0;letter-spacing:-.01em}
+p{margin:0 0 1em}
+.wrap{width:min(1240px,100% - 32px);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;min-height:50px;padding:0 26px;border-radius:4px;font:700 16px/1 Lato,sans-serif;text-decoration:none;border:0;cursor:pointer;transition:background .2s,color .2s,box-shadow .2s}
+.btn-z{background:linear-gradient(180deg,#9A6B24,#7A4A0E);color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.btn-z:hover{background:linear-gradient(180deg,#A67A30,#83530F)}
+.btn-o{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn-o:hover{background:var(--ink);color:#fff}
+/* tablica Filipowicz */
+.tab{display:inline-flex;align-items:center;gap:.45em;background:var(--ink);color:var(--goldL);font:700 13px/1 Lato,sans-serif;letter-spacing:.02em;padding:6px 10px 6px;border-radius:3px;box-shadow:inset 0 0 0 1px #6f5122,inset 0 0 0 3px var(--ink),inset 0 0 0 4px rgba(209,163,90,.55);white-space:nowrap}
+.tab i{font-style:normal;color:#e9e3d6;font-weight:400}
+.zaw{display:block;width:132px;height:18px;margin:14px 0 0;color:var(--gold2)}
+.sek{padding:clamp(64px,8vw,112px) 0}
+.sek-g{background:var(--gray)}
+.glowa{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:16px 40px;margin-bottom:clamp(28px,4vw,44px)}
+.glowa h2{font-size:clamp(30px,4.2vw,46px);max-width:18ch}
+.glowa p{max-width:52ch;color:var(--mut);margin:0}
+/* header */
+.hdr{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.97);backdrop-filter:saturate(1.4) blur(8px);border-bottom:1px solid var(--line)}
+.hdr .wrap{height:calc(var(--hdr) - 1px);display:flex;align-items:center;gap:24px}
+.logo img{height:46px;width:auto}
+.nav{display:flex;gap:26px;margin-left:auto}
+.nav a{text-decoration:none;font-weight:700;font-size:15px;color:var(--ink);padding:8px 0;position:relative}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--gold2);transform:scaleX(0);transition:transform .25s}
+.nav a:hover::after,.nav a.on::after{transform:scaleX(1)}
+.tel{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-weight:700;font-size:15px;color:var(--ink);padding:10px 14px;border-radius:4px;box-shadow:inset 0 0 0 1.5px var(--gold2)}
+.tel svg{width:18px;height:18px;color:var(--gold)}
+.burger{display:none;width:46px;height:46px;border:0;background:none;padding:11px;cursor:pointer}
+.burger span{display:block;height:2px;background:var(--ink);margin:6px 0;transition:transform .25s,opacity .2s}
+.menu-m{display:none}
+/* hero */
+.hero{position:relative;min-height:calc(100svh - var(--hdr));display:flex;align-items:center;overflow:hidden;background:#fff}
+.hero-foto{position:absolute;top:0;right:0;bottom:0;width:58%;margin:0}
+.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 60%}
+.hero-foto::after{content:"";position:absolute;inset:0 auto 0 0;width:36px;background:linear-gradient(90deg,#fff,rgba(255,255,255,0))}
+.hero-in{position:relative;width:min(1240px,100% - 32px);margin:0 auto;padding:40px 0}
+.hero-txt{max-width:min(38%,560px)}
+.hero h1{font-size:clamp(40px,4.1vw,64px)}
+.hero .lead{font-size:clamp(17px,1.3vw,20px);max-width:40ch;margin:20px 0 30px;color:var(--txt)}
+.hero .akcje{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.hero .tab{margin-bottom:20px}
+.hero-pod{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);font-size:15px;color:var(--mut);max-width:40ch}
+.hero-pod a{color:var(--ink);font-weight:700;text-decoration:none;white-space:nowrap}
+/* karuzele */
+.tor-box{position:relative}
+.tor{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 3*24px)/4);gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain;cursor:grab}
+.tor::-webkit-scrollbar{display:none}
+.tor.drag{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.tor>*{scroll-snap-align:start;min-width:0}
+.str{position:absolute;top:calc(50% - 50px);width:48px;height:48px;border-radius:50%;border:0;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.16);cursor:pointer;display:grid;place-items:center;z-index:3;transition:opacity .2s}
+.str svg{width:20px;height:20px}
+.str.l{left:-20px}.str.p{right:-20px}
+.str[disabled]{opacity:0;pointer-events:none}
+.tor-nawi{display:flex;align-items:center;gap:14px;margin-top:22px;color:var(--mut);font-size:14px}
+.tor-pasek{flex:1;height:2px;background:var(--line);position:relative;overflow:hidden;max-width:360px}
+.tor-pasek b{position:absolute;left:0;top:0;bottom:0;background:var(--gold2);width:25%;transition:transform .15s}
+/* karta auta */
+.auto{background:#fff;display:flex;flex-direction:column;border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 0 0 1px var(--line)}
+.gal{position:relative;aspect-ratio:4/3;background:#ddd;overflow:hidden}
+.gal-tor{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;overscroll-behavior-x:contain}
+.gal-tor::-webkit-scrollbar{display:none}
+.gal-tor img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:start}
+.gal .g-str{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);display:grid;place-items:center;cursor:pointer;opacity:0;transition:opacity .2s}
+.gal .g-str svg{width:16px;height:16px}
+.gal .g-l{left:10px}.gal .g-p{right:10px}
+.gal:hover .g-str{opacity:1}
+.gal .licz{position:absolute;right:10px;bottom:10px;background:rgba(20,20,20,.72);color:#fff;font-size:12px;font-weight:700;padding:4px 8px;border-radius:3px}
+.gal .tab{position:absolute;left:10px;top:10px}
+.auto-op{padding:18px 20px 20px;display:flex;flex-direction:column;gap:4px;flex:1}
+.auto h3{font-size:23px}
+.auto .meta{color:var(--mut);font-size:15px;margin:0}
+.auto .cena{margin:10px 0 0;padding-top:12px;border-top:1px solid var(--line);font-weight:700;color:var(--ink);font-size:18px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-top:auto}
+.auto .cena small{font-weight:400;color:var(--mut);font-size:14px}
+.auto a.wiecej{color:var(--gold);font-weight:700;font-size:15px;text-decoration:none}
+.auto a.wiecej:hover{text-decoration:underline}
+.mini .gal{aspect-ratio:3/2}
+.mini h3{font-size:21px}
+.rzad2{margin-top:clamp(56px,7vw,88px)}
+.rzad2 h3.pod{font-size:clamp(24px,2.6vw,30px);margin-bottom:6px}
+.rzad2 .pod-p{color:var(--mut);margin:0 0 24px;max-width:60ch}
+.tor-mini{grid-auto-columns:calc((100% - 3*24px)/4)}
+.zobacz-all{margin-top:30px}
+/* renowacja */
+.reno{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px);align-items:start}
+.reno-txt h2{font-size:clamp(30px,4.2vw,46px)}
+.reno-txt .lead{font-size:19px;color:var(--ink);margin:22px 0 18px}
+.fakty{margin:26px 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.fakty li{display:grid;grid-template-columns:minmax(0,9.5em) minmax(0,1fr);gap:16px;padding:13px 0;border-bottom:1px solid var(--line);font-size:16px}
+.fakty b{color:var(--ink)}
+.etapy{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 16px)/1.6);gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;cursor:grab}
+.etapy::-webkit-scrollbar{display:none}
+.etapy.drag{cursor:grabbing;scroll-snap-type:none;user-select:none}
+.etap{scroll-snap-align:start;margin:0}
+.etap img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:5px}
+.etap figcaption{padding:12px 2px 0;font-size:15px;color:var(--mut)}
+.etap figcaption b{display:block;color:var(--ink);font-size:17px;margin-bottom:2px;font-family:Newsreader,Georgia,serif;font-weight:600}
+.przed{margin-top:clamp(48px,6vw,80px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4px;position:relative;border-radius:6px;overflow:hidden}
+.przed figure{margin:0;position:relative}
+.przed img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.przed figcaption{position:absolute;left:14px;bottom:14px}
+.przed-p{margin:14px 0 0;color:var(--mut);font-size:15px}
+/* zamowienie - ciemna tablica */
+.zam{background:var(--ink);color:#d9d6cf;position:relative;overflow:hidden}
+.zam::before{content:"";position:absolute;inset:14px;border:1px solid rgba(209,163,90,.45);border-radius:6px;pointer-events:none}
+.zam .wrap{width:min(1240px,100% - 64px)}
+.zam-in{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(32px,5vw,72px);align-items:center}
+.zam h2{color:#fff;font-size:clamp(30px,4.2vw,46px)}
+.zam .zaw{color:var(--goldL)}
+.zam p{color:#cfccc4}
+.zam .cena-od{font-family:Newsreader,Georgia,serif;font-size:clamp(26px,3vw,34px);color:var(--goldL);margin:22px 0 4px}
+.zam ul{margin:0 0 28px;padding:0;list-style:none}
+.zam li{padding:9px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.zam-foto{margin:0;border-radius:5px;overflow:hidden}
+.zam-foto img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+/* odkup */
+.odkup{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 40px;padding:34px 0;border-bottom:1px solid var(--line)}
+.odkup h2{font-size:clamp(26px,3vw,34px)}
+.odkup p{margin:6px 0 0;color:var(--mut)}
+/* czesci */
+.czesc{margin:0;background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 0 0 1px var(--line);display:flex;flex-direction:column}
+.czesc img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.czesc figcaption{padding:14px 16px 16px;font-size:15px;color:var(--mut);display:flex;flex-direction:column;gap:2px;flex:1}
+.czesc figcaption b{color:var(--ink);font-size:17px}
+.czesc figcaption span.c{margin-top:auto;padding-top:8px;color:var(--ink);font-weight:700}
+.walizki{margin-top:28px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;border-top:1px solid var(--line)}
+.walizki div{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;font-size:16px}
+.walizki b{color:var(--ink);white-space:nowrap}
+/* o nas */
+.onas{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(32px,5vw,72px);align-items:start}
+.cyt{font-family:Newsreader,Georgia,serif;font-size:clamp(23px,2.4vw,30px);line-height:1.35;color:var(--ink);margin:0 0 22px}
+.podpis{display:flex;align-items:center;gap:14px;margin-top:26px}
+.podpis img{height:44px;width:auto}
+.podpis span{font-size:15px;color:var(--mut);line-height:1.4}
+.podpis b{color:var(--ink);display:block}
+.eventy{list-style:none;margin:16px 0 0;padding:0;border-top:1px solid var(--line)}
+.eventy li{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.eventy li span{color:var(--mut)}
+.onas h3{font-size:24px}
+/* kontakt */
+.kont{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,72px)}
+.kont h2{font-size:clamp(30px,4.2vw,46px)}
+.dane{margin:26px 0 0;font-size:18px}
+.dane a{text-decoration:none;font-weight:700;color:var(--ink)}
+.dane div{padding:14px 0;border-bottom:1px solid var(--line)}
+.dane small{display:block;color:var(--mut);font-size:14px}
+form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;background:#fff;padding:clamp(22px,3vw,34px);border-radius:6px;box-shadow:0 0 0 1px var(--line)}
+form label{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:700;color:var(--ink)}
+form .full{grid-column:1/-1}
+input,select,textarea{font:16px/1.4 Lato,sans-serif;padding:13px 14px;border:1px solid #cfd3d8;border-radius:4px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold2);outline-offset:0;border-color:transparent}
+textarea{min-height:120px;resize:vertical}
+.form-info{grid-column:1/-1;font-size:14px;color:var(--mut);margin:0}
+.form-ok{grid-column:1/-1;display:none;background:var(--gray);padding:12px 14px;border-radius:4px;font-size:15px}
+/* stopka */
+.stopka{background:var(--gray);padding:44px 0 26px;font-size:15px;color:var(--mut)}
+.st-g{display:grid;grid-template-columns:minmax(0,4fr) repeat(3,minmax(0,2fr));gap:28px}
+.st-g img{height:48px;width:auto;margin-bottom:12px}
+.st-g h4{margin:0 0 10px;font:700 15px Lato,sans-serif;color:var(--ink)}
+.st-g a{display:block;text-decoration:none;padding:3px 0}
+.st-g a:hover{color:var(--ink)}
+.st-d{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px 24px;font-size:14px}
+/* wylinka-badge (oficjalny fragment) */
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+/* pasek mobilny */
+.mob{display:none}
+@media (max-height:820px) and (min-width:761px){.hero h1{font-size:clamp(36px,3.7vw,54px)}.hero .lead{margin:14px 0 22px}.hero-pod{margin-top:22px}}
+@media (max-width:980px) and (min-width:761px){.hero-foto{width:50%}.hero-txt{max-width:46%}}
+@media (max-width:1180px){.nav{gap:18px}.tel span{display:none}.tor,.tor-mini{grid-auto-columns:calc((100% - 2*24px)/3)}}
+@media (max-width:980px){
+ .nav,.tel{display:none}.burger{display:block;margin-left:auto}
+ .menu-m{display:block;position:fixed;inset:var(--hdr) 0 0 0;background:#fff;z-index:49;padding:12px 16px 24px;transform:translateY(-8px);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;overflow:auto}
+ .menu-m.otw{opacity:1;transform:none;visibility:visible}
+ .menu-m a.l{display:block;padding:15px 0;border-bottom:1px solid var(--line);text-decoration:none;font:500 24px/1.2 Newsreader,Georgia,serif;color:var(--ink)}
+ .menu-m a.l.on{color:var(--gold)}
+ .menu-m .m-tel{margin-top:22px;display:flex;flex-direction:column;gap:12px}
+ .menu-m .m-tel p{margin:0;color:var(--mut);font-size:15px;line-height:1.5}
+ body.mo .burger span:nth-child(1){transform:translateY(8px) rotate(45deg)}
+ body.mo .burger span:nth-child(2){opacity:0}
+ body.mo .burger span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+ .reno,.zam-in,.onas,.kont{grid-template-columns:minmax(0,1fr)}
+ .walizki{grid-template-columns:minmax(0,1fr)}
+ .st-g{grid-template-columns:repeat(2,minmax(0,1fr))}.st-g>div:first-child{grid-column:1/-1}
+}
+@media (max-width:760px){
+ :root{--hdr:60px}
+ body{font-size:16px}
+ .logo img{height:38px}
+ .hdr .tel-i{display:grid}
+ .hero{flex-direction:column;align-items:stretch;min-height:calc(100svh - var(--hdr))}
+ .hero-foto{position:relative;inset:auto;flex:1 1 0;min-height:min(56vw,30svh);align-self:stretch;width:100%}
+ .hero-foto img{object-position:50% 70%}
+ .hero-foto::after{inset:auto 0 0 0;width:auto;height:22%;background:linear-gradient(0deg,#fff,rgba(255,255,255,0))}
+ .hero-in{flex:0 0 auto;padding:6px 0 max(22px,3.2svh);width:calc(100% - 32px)}
+ .hero-txt{max-width:none}
+ .hero h1{font-size:clamp(29px,min(8.4vw,4.6svh),38px)}
+ .hero .lead{font-size:clamp(15.5px,2.1svh,17px);margin:12px 0 20px;line-height:1.55}
+ .hero .tab{margin-bottom:12px}
+ .hero .akcje .btn{flex:1}
+ .hero .btn-o,.hero-pod{display:none}
+ .tor,.tor-mini{grid-auto-columns:84%;gap:14px}
+ .tor-mini{grid-auto-columns:74%}
+ .str{display:none}
+ .etapy{grid-auto-columns:78%}
+ .etap img{aspect-ratio:4/3}
+ .przed img{aspect-ratio:4/5}
+ .fakty li{grid-template-columns:minmax(0,1fr);gap:2px}
+ form{grid-template-columns:minmax(0,1fr)}
+ .glowa{margin-bottom:24px}
+ .mob{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:40;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.97);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .25s}
+ .mob.widac{transform:none}
+ .mob .btn{flex:1;min-height:46px;padding:0 12px}
+ .stopka{padding-bottom:90px}
+}
+.tel-i{display:none;width:44px;height:44px;place-items:center;border-radius:50%;box-shadow:inset 0 0 0 1.5px var(--gold2);color:var(--gold);margin-left:auto}
+.tel-i svg{width:19px;height:19px}
+@media (max-width:760px){.burger{margin-left:4px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="zaw" viewBox="0 0 132 18"><path d="M2 13.5C18 4 36 2.6 54 7.2s30 7.4 46 3.6C111 8.2 120 4.2 130 2.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M50 6.2c4-3.6 9-4.4 12-2.4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></symbol>
+ <symbol id="tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></symbol>
+ <symbol id="sl" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+ <symbol id="sp" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="hdr">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Mercedes Classic Cars Filipowicz - strona główna"><img src="img/logo.webp" width="600" height="193" alt="Filipowicz Mercedes Classic Cars"></a>
+  <nav class="nav" aria-label="Menu główne">
+   <a href="#showroom">Showroom</a>
+   <a href="#renowacja">Renowacja</a>
+   <a href="#na-zamowienie">Na zamówienie</a>
+   <a href="#czesci">Części</a>
+   <a href="#o-nas">O nas</a>
+   <a href="#kontakt">Kontakt</a>
+  </nav>
+  <a class="tel" href="tel:+48727001122"><svg><use href="#tel"/></svg><span>+48 727 001 122</span></a>
+  <a class="tel-i" href="tel:+48727001122" aria-label="Zadzwoń: +48 727 001 122"><svg><use href="#tel"/></svg></a>
+  <button class="burger" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu-m"><span></span><span></span><span></span></button>
+ </div>
+</header>
+<div class="menu-m" id="menu-m">
+ <a class="l" href="#showroom">Showroom</a>
+ <a class="l" href="#renowacja">Renowacja</a>
+ <a class="l" href="#na-zamowienie">Auto na zamówienie</a>
+ <a class="l" href="#czesci">Części i akcesoria</a>
+ <a class="l" href="#o-nas">O nas</a>
+ <a class="l" href="#kontakt">Kontakt</a>
+ <div class="m-tel">
+  <p>Posiadasz klasyczne auto? Chętnie je odkupimy.</p>
+  <a class="btn btn-z" href="tel:+48727001122"><svg width="18" height="18"><use href="#tel"/></svg>+48 727 001 122</a>
+  <a class="btn btn-o" href="mailto:kontakt@mercedesclassiccars.pl">kontakt@mercedesclassiccars.pl</a>
+ </div>
+</div>
+
+<main id="top">
+<section class="hero">
+ <figure class="hero-foto">
+  <picture>
+   <source media="(max-width:760px)" srcset="img/hero-m.webp">
+   <img src="img/hero.webp" width="1920" height="1080" alt="Mercedes-Benz 190 SL z czerwonym wnętrzem na trawie" fetchpriority="high">
+  </picture>
+ </figure>
+ <div class="hero-in"><div class="hero-txt">
+  <span class="tab">Mercedes 1950-1975</span>
+  <h1>Klasyczne Mercedesy w pierwotnym blasku</h1>
+  <p class="lead">Wyszukujemy je na całym świecie i odbudowujemy we własnym warsztacie, do najdrobniejszego szczegółu. Zachowujemy 100% oryginalności i zgodność numerów.</p>
+  <div class="akcje">
+   <a class="btn btn-z" href="#showroom">Zobacz auta</a>
+   <a class="btn btn-o" href="#renowacja">Jak odbudowujemy</a>
+  </div>
+  <p class="hero-pod">Posiadasz klasyczne auto? Chętnie je odkupimy: <a href="tel:+48727001122">+48 727 001 122</a></p>
+ </div></div>
+</section>
+
+<section class="sek" id="showroom">
+ <div class="wrap">
+  <div class="glowa">
+   <div><h2>Auta w renowacji, do rezerwacji</h2><svg class="zaw"><use href="#zaw"/></svg></div>
+   <p>Każde auto ma u nas swój numer. Rezerwujesz je w trakcie prac i co kilka dni dostajesz nowe zdjęcia z warsztatu.</p>
+  </div>
+  <div class="tor-box">
+   <div class="tor" data-tor>
+    <article class="auto">
+     <div class="gal" data-gal>
+      <div class="gal-tor">
+       <img src="img/g695a.webp" width="1000" height="562" alt="Mercedes 300 SL Coupe Gullwing nr 695, bok" loading="lazy">
+       <img src="img/g695b.webp" width="1000" height="562" alt="300 SL Gullwing, wnętrze przez otwarte drzwi" loading="lazy">
+       <img src="img/g695c.webp" width="1000" height="562" alt="300 SL Gullwing, tył" loading="lazy">
+       <img src="img/g695d.webp" width="800" height="600" alt="300 SL Gullwing, kierownica i zegary" loading="lazy">
+       <img src="img/g695e.webp" width="800" height="600" alt="300 SL Gullwing w lakierni" loading="lazy">
+      </div>
+      <span class="tab">Nr 695</span>
+     </div>
+     <div class="auto-op">
+      <h3>300 SL Coupe Gullwing</h3>
+      <p class="meta">1961 · odbiór marzec 2027</p>
+      <p class="meta">Dostarczony jako nowy do USA, numery i kolory zgodne.</p>
+      <p class="cena">Na zapytanie <a class="wiecej" href="#kontakt">Zapytaj</a></p>
+     </div>
+    </article>
+    <article class="auto">
+     <div class="gal" data-gal>
+      <div class="gal-tor">
+       <img src="img/g694a.webp" width="800" height="600" alt="280 SL nr 694, blacha z kartką numeru nadwozia" loading="lazy">
+       <img src="img/g694b.webp" width="800" height="600" alt="Kartka z numerem nadwozia 113044-10-000914" loading="lazy">
+       <img src="img/g694c.webp" width="800" height="600" alt="Przód nadwozia 280 SL na stelażu" loading="lazy">
+       <img src="img/g694d.webp" width="800" height="600" alt="Nadwozie 280 SL podczas napraw blacharskich" loading="lazy">
+      </div>
+      <span class="tab">Nr 694</span>
+     </div>
+     <div class="auto-op">
+      <h3>280 SL W113 Pagoda</h3>
+      <p class="meta">1969 · zieleń, wnętrze koniak · odbiór kwiecień 2027</p>
+      <p class="meta">Manualna 6-biegowa skrzynia, oryginalna klimatyzacja.</p>
+      <p class="cena">185 000 € <a class="wiecej" href="#kontakt">Zapytaj</a></p>
+     </div>
+    </article>
+    <article class="auto">
+     <div class="gal" data-gal>
+      <div class="gal-tor">
+       <img src="img/g693a.webp" width="800" height="600" alt="280 SL Pagoda nr 693 w kolorze antracyt" loading="lazy">
+       <img src="img/g693b.webp" width="800" height="600" alt="280 SL Pagoda nr 693 w trakcie renowacji" loading="lazy">
+       <img src="img/g693c.webp" width="800" height="600" alt="Nadwozie 280 SL nr 693 w lakierni" loading="lazy">
+       <img src="img/g693d.webp" width="800" height="600" alt="280 SL nr 693 przed renowacją" loading="lazy">
+      </div>
+      <span class="tab">Nr 693</span>
+     </div>
+     <div class="auto-op">
+      <h3>280 SL Pagoda Manual</h3>
+      <p class="meta">1969 · antracyt DB 172, wnętrze koniak · odbiór kwiecień 2027</p>
+      <p class="meta">Silnik 2,8 l zbudowany na nowych częściach.</p>
+      <p class="cena">185 000 € <a class="wiecej" href="#kontakt">Zapytaj</a></p>
+     </div>
+    </article>
+    <article class="auto">
+     <div class="gal" data-gal>
+      <div class="gal-tor">
+       <img src="img/g682a.webp" width="1000" height="562" alt="280 SL Pagoda nr 682, deska rozdzielcza i zielone wnętrze" loading="lazy">
+       <img src="img/g682b.webp" width="800" height="600" alt="Zielone skórzane fotele 280 SL nr 682" loading="lazy">
+       <img src="img/g682c.webp" width="800" height="600" alt="Silnik 280 SL nr 682 po odbudowie" loading="lazy">
+       <img src="img/g682d.webp" width="800" height="600" alt="Radio Europa w 280 SL nr 682" loading="lazy">
+      </div>
+      <span class="tab">Nr 682</span>
+     </div>
+     <div class="auto-op">
+      <h3>280 SL Pagoda</h3>
+      <p class="meta">1970 · szmaragd, zielona skóra · odbiór listopad 2026</p>
+      <p class="meta">Twardy dach w kolorze nadwozia, walizki w kolorze tapicerki.</p>
+      <p class="cena">195 000 € <a class="wiecej" href="#kontakt">Zapytaj</a></p>
+     </div>
+    </article>
+   </div>
+   <button class="str l" aria-label="Poprzednie"><svg><use href="#sl"/></svg></button>
+   <button class="str p" aria-label="Następne"><svg><use href="#sp"/></svg></button>
+  </div>
+
+  <div class="rzad2">
+   <h3 class="pod">W showroomie</h3>
+   <p class="pod-p">Wybrane auta z naszej kolekcji. W showroomie czeka ich więcej, razem z projektami do odbudowy.</p>
+   <div class="tor-box">
+    <div class="tor tor-mini" data-tor>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a190-55.webp" width="1000" height="562" alt="Mercedes 190 SL 1955 srebrny" loading="lazy"></div></div><div class="auto-op"><h3>190 SL</h3><p class="meta">1955 · srebrny</p><p class="cena">185 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a280-70.webp" width="1000" height="562" alt="Mercedes 280 SL Pagoda 1970 zielony" loading="lazy"></div></div><div class="auto-op"><h3>280 SL Pagoda</h3><p class="meta">1970 · zielony</p><p class="cena">190 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a300s.webp" width="1000" height="514" alt="Mercedes 300 S 1953" loading="lazy"></div></div><div class="auto-op"><h3>300 S</h3><p class="meta">1953</p><p class="cena">450 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a220cab.webp" width="1000" height="562" alt="Mercedes 220 SE Cabrio 1959" loading="lazy"></div></div><div class="auto-op"><h3>220 SE Cabrio</h3><p class="meta">1959</p><p class="cena">185 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a190-62.webp" width="1000" height="562" alt="Mercedes 190 SL 1962" loading="lazy"></div></div><div class="auto-op"><h3>190 SL</h3><p class="meta">1962</p><p class="cena">185 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a220seb.webp" width="1000" height="562" alt="Mercedes 220 SEb 1965 zielony" loading="lazy"></div></div><div class="auto-op"><h3>220 SEb</h3><p class="meta">1965 · zielony</p><p class="cena">175 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a300b.webp" width="1000" height="562" alt="Mercedes 300 B Adenauer 1954 czarny" loading="lazy"></div></div><div class="auto-op"><h3>300 B Adenauer</h3><p class="meta">1954 · czarny</p><p class="cena">150 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a220se-57.webp" width="1000" height="562" alt="Mercedes 220 SE Ponton 1957" loading="lazy"></div></div><div class="auto-op"><h3>220 SE Ponton</h3><p class="meta">1957</p><p class="cena">175 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a220a.webp" width="1000" height="562" alt="Mercedes 220 A 1953" loading="lazy"></div></div><div class="auto-op"><h3>220 A</h3><p class="meta">1953</p><p class="cena">175 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a190-60.webp" width="1000" height="562" alt="Mercedes 190 SL 1960" loading="lazy"></div></div><div class="auto-op"><h3>190 SL</h3><p class="meta">1960</p><p class="cena">175 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a560.webp" width="1000" height="562" alt="Mercedes 560 SL R107 1987" loading="lazy"></div></div><div class="auto-op"><h3>560 SL R107</h3><p class="meta">1987</p><p class="cena">52 000 €</p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a300slr.webp" width="1000" height="562" alt="Mercedes 300 SL Roadster 1961" loading="lazy"></div></div><div class="auto-op"><h3>300 SL Roadster</h3><p class="meta">1961</p><p class="cena"><small>Kolekcja prywatna</small></p></div></article>
+     <article class="auto mini"><div class="gal"><div class="gal-tor"><img src="img/a290.webp" width="1000" height="562" alt="Mercedes 290 Spezial Roadster 1937" loading="lazy"></div></div><div class="auto-op"><h3>290 Spezial Roadster</h3><p class="meta">1937</p><p class="cena"><small>Kolekcja prywatna</small></p></div></article>
+    </div>
+    <button class="str l" aria-label="Poprzednie"><svg><use href="#sl"/></svg></button>
+    <button class="str p" aria-label="Następne"><svg><use href="#sp"/></svg></button>
+   </div>
+   <div class="tor-nawi"><span class="tor-pasek"><b></b></span><span>przesuń, aby zobaczyć więcej</span></div>
+  </div>
+ </div>
+</section>
+
+<section class="sek sek-g" id="renowacja">
+ <div class="wrap">
+  <div class="reno">
+   <div class="reno-txt">
+    <h2>Renowacja: numer, który się zgadza</h2>
+    <svg class="zaw"><use href="#zaw"/></svg>
+    <p class="lead">Specjalizujemy się w Mercedesach z lat 1950-1975, przeważnie kabrioletach. Auto rozbieramy na najdrobniejsze części, a każda z nich nosi numer nadwozia, aż do złożenia.</p>
+    <p>Odnawiamy karoserię, zespoły napędowe, powłoki galwaniczne, lakier, instalację elektryczną i tapicerkę. Składamy auto od podstaw na oryginalnych częściach. Przyjmujemy auta klientów albo kupujesz u nas egzemplarz, który przywrócimy do stanu z fabryki.</p>
+    <ul class="fakty">
+     <li><b>Czas renowacji</b><span>6-8 miesięcy od rozpoczęcia prac</span></li>
+     <li><b>Dokumentacja</b><span>około 500 zdjęć z prac i wycena z opinią dla właściciela</span></li>
+     <li><b>Wycena poremontowa</b><span>nasze auta zawsze otrzymują ocenę „1" od specjalistów Mercedes-Benz</span></li>
+     <li><b>Oryginalność</b><span>zgodność numerów silnika, nadwozia, ramy i podzespołów</span></li>
+     <li><b>Gwarancja</b><span>2 lata, faktura VAT, auta oclone w UE</span></li>
+    </ul>
+   </div>
+   <div>
+    <div class="etapy" data-etapy>
+     <figure class="etap"><img src="img/r1.webp" width="800" height="600" alt="Kartka z numerem nadwozia na blasze" loading="lazy"><figcaption><b>Demontaż i dokumentacja</b>Każda część dostaje numer nadwozia.</figcaption></figure>
+     <figure class="etap"><img src="img/r2.webp" width="800" height="600" alt="Gołe nadwozie Pagody" loading="lazy"><figcaption><b>Weryfikacja stanu</b>Ocena blacharki i kompletności.</figcaption></figure>
+     <figure class="etap"><img src="img/r3.webp" width="800" height="600" alt="Nadwozie w podkładzie w lakierni" loading="lazy"><figcaption><b>Karoseria</b>Naprawa blacharska i zabezpieczenie.</figcaption></figure>
+     <figure class="etap"><img src="img/r4.webp" width="800" height="600" alt="Odbudowany sześciocylindrowy silnik" loading="lazy"><figcaption><b>Zespoły napędowe</b>Silnik i mechanika odświeżone, zabezpieczone.</figcaption></figure>
+     <figure class="etap"><img src="img/r5.webp" width="800" height="600" alt="Polakierowane nadwozie Pagody" loading="lazy"><figcaption><b>Lakier</b>Kolor z karty danych albo wybrany przez Ciebie.</figcaption></figure>
+     <figure class="etap"><img src="img/r6.webp" width="800" height="600" alt="Wnętrze Pagody podczas prac tapicerskich" loading="lazy"><figcaption><b>Tapicerka</b>Skóra, wykładziny, drewno.</figcaption></figure>
+     <figure class="etap"><img src="img/r7.webp" width="800" height="600" alt="Montaż Pagody na oryginalnych częściach" loading="lazy"><figcaption><b>Montaż</b>Auto złożone od podstaw na oryginalnych częściach.</figcaption></figure>
+    </div>
+    <div class="tor-nawi"><span class="tor-pasek"><b></b></span><span>przesuń etapy</span></div>
+   </div>
+  </div>
+  <div class="przed">
+   <figure><img src="img/p300raw.webp" width="1000" height="562" alt="300 SL Gullwing w lakierni, nadwozie w gołej blasze" loading="lazy"><figcaption><span class="tab">W lakierni</span></figcaption></figure>
+   <figure><img src="img/p300fin.webp" width="1000" height="562" alt="300 SL Gullwing po renowacji, srebrny lakier" loading="lazy"><figcaption><span class="tab">Po renowacji</span></figcaption></figure>
+  </div>
+  <p class="przed-p">300 SL Coupe Gullwing nr 695, z relacji zdjęciowej renowacji.</p>
+ </div>
+</section>
+
+<section class="sek zam" id="na-zamowienie">
+ <div class="wrap zam-in">
+  <div>
+   <h2>Zaprojektuj swoją Pagodę albo 190 SL jak z fabryki</h2>
+   <svg class="zaw"><use href="#zaw"/></svg>
+   <p>Kupujesz auto w stanie do odrestaurowania, a my zrobimy je dla Ciebie. Zmiana koloru karoserii i skóry nie wpływa na wartość samochodu.</p>
+   <p class="cena-od">od 80 000 €</p>
+   <ul>
+    <li>kolor nadwozia</li>
+    <li>kolor tapicerki</li>
+    <li>wybarwienie drewna</li>
+   </ul>
+   <a class="btn btn-z" href="#kontakt">Porozmawiajmy o Twoim aucie</a>
+  </div>
+  <figure class="zam-foto"><img src="img/proj.webp" width="1000" height="562" alt="Jasna skórzana tapicerka i kierownica 300 SL" loading="lazy"></figure>
+ </div>
+</section>
+
+<section class="sek" id="czesci">
+ <div class="wrap">
+  <div class="odkup">
+   <div><h2>Posiadasz klasyczne auto? Chętnie je odkupimy.</h2><p>Zadzwoń i opowiedz nam o nim.</p></div>
+   <a class="btn btn-z" href="tel:+48727001122"><svg width="18" height="18"><use href="#tel"/></svg>+48 727 001 122</a>
+  </div>
+  <div class="glowa" style="margin-top:clamp(56px,7vw,88px)">
+   <div><h2>Części i akcesoria</h2><svg class="zaw"><use href="#zaw"/></svg></div>
+   <p>Z naszego warsztatu: podzespoły do Pagody i 190 SL oraz walizki szyte według zamówienia.</p>
+  </div>
+  <div class="tor-box">
+   <div class="tor tor-mini" data-tor>
+    <figure class="czesc"><img src="img/c-skrzynia6.webp" width="800" height="600" alt="Manualna 6-biegowa skrzynia biegów do Pagody" loading="lazy"><figcaption><b>6-biegowe manualne skrzynie</b>Pagoda<span class="c">8 000 €</span></figcaption></figure>
+    <figure class="czesc"><img src="img/c-skrzynia.webp" width="800" height="600" alt="Skrzynia biegów 230 SL, 250 SL, 280 SL" loading="lazy"><figcaption><b>Skrzynie biegów</b>230 SL, 250 SL, 280 SL<span class="c">5 000 €</span></figcaption></figure>
+    <figure class="czesc"><img src="img/c-solex.webp" width="800" height="600" alt="Gaźniki Solex" loading="lazy"><figcaption><b>Gaźniki Solex</b>1955-1963<span class="c">5 500 € + wysyłka</span></figcaption></figure>
+    <figure class="czesc"><img src="img/c-wtrysk.webp" width="800" height="600" alt="Elektroniczny wtrysk paliwa" loading="lazy"><figcaption><b>Elektroniczny wtrysk paliwa</b>1969<span class="c">4 800 €</span></figcaption></figure>
+    <figure class="czesc"><img src="img/c-wyglusz.webp" width="800" height="600" alt="Zestaw wygłuszeń do Pagody" loading="lazy"><figcaption><b>Zestaw wygłuszeń</b>Pagoda<span class="c">2 000 €</span></figcaption></figure>
+    <figure class="czesc"><img src="img/c-radio.webp" width="800" height="600" alt="Radio w stylu epoki w desce Pagody" loading="lazy"><figcaption><b>Części do Pagody</b>230 SL, 250 SL, 280 SL<span class="c">od 800 €</span></figcaption></figure>
+   </div>
+   <button class="str l" aria-label="Poprzednie"><svg><use href="#sl"/></svg></button>
+   <button class="str p" aria-label="Następne"><svg><use href="#sp"/></svg></button>
+  </div>
+  <div class="walizki">
+   <div><span>Walizki Pagoda, kolor według zamówienia</span><b>1 600 €</b></div>
+   <div><span>Walizki 220 S / 220 SE Ponton</span><b>1 800 €</b></div>
+   <div><span>Walizki 190 SL</span><b>od 1 200 €</b></div>
+   <div><span>Stojak do dachu</span><b>450 zł</b></div>
+   <div><span>Chromowane podkładki</span><b>150 zł / szt.</b></div>
+  </div>
+  <p style="margin:14px 0 0;font-size:14px;color:var(--mut)">Ceny bez kosztu wysyłki.</p>
+ </div>
+</section>
+
+<section class="sek sek-g" id="o-nas">
+ <div class="wrap onas">
+  <div>
+   <h2 style="font-size:clamp(30px,4.2vw,46px)">Z pasji do klasycznych aut</h2>
+   <svg class="zaw"><use href="#zaw"/></svg>
+   <p class="cyt" style="margin-top:26px">Szukamy Mercedesów wyprodukowanych w większości ręcznie, w krótkich seriach, z których do dziś zachowało się kilkanaście albo kilkaset sztuk. Z pasją przywracamy im pierwotny blask.</p>
+   <p>Wyszukujemy je po całym świecie: zapomniane, nadszarpnięte czasem, ale spełniające nasze wymagania co do stanu zachowania. Nasze auta spotkasz u poważnych sprzedawców w Europie i na najlepszych targach, gdzie zbierają wysokie oceny fachowców.</p>
+   <div class="podpis"><img src="img/logo.webp" width="600" height="193" alt="" loading="lazy"><span><b>Tomasz Filipowicz</b>właściciel Mercedes Classic Cars</span></div>
+  </div>
+  <div>
+   <h3>Gdzie pokazywaliśmy nasze auta</h3>
+   <ul class="eventy">
+    <li>Retro Motor Show<span>2022</span></li>
+    <li>Essen<span>2022</span></li>
+    <li>Muzeum Mercedes-Benz<span>Stuttgart</span></li>
+    <li>Salzburg<span>2020</span></li>
+    <li>Stuttgart<span>2020</span></li>
+    <li>Essen<span>2019</span></li>
+    <li>Warszawa<span>2018</span></li>
+    <li>Poznań<span>2017</span></li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="sek" id="kontakt">
+ <div class="wrap kont">
+  <div>
+   <h2>Kontakt</h2>
+   <svg class="zaw"><use href="#zaw"/></svg>
+   <p style="margin-top:22px;color:var(--mut)">Pytasz o auto z showroomu, renowację swojego Mercedesa albo sprzedaż klasyka? Zadzwoń lub napisz.</p>
+   <div class="dane">
+    <div><small>Telefon</small><a href="tel:+48727001122">+48 727 001 122</a></div>
+    <div><small>E-mail</small><a href="mailto:kontakt@mercedesclassiccars.pl">kontakt@mercedesclassiccars.pl</a></div>
+    <div><small>Mercedes Classic Cars</small>Tomasz Filipowicz, Warszawa</div>
+   </div>
+  </div>
+  <form id="forma" novalidate>
+   <label>Imię i nazwisko<input name="n" autocomplete="name" required></label>
+   <label>Telefon lub e-mail<input name="k" autocomplete="email" required></label>
+   <label class="full">Temat
+    <select name="t"><option>Auto z showroomu</option><option>Renowacja mojego auta</option><option>Auto na zamówienie</option><option>Sprzedaż mojego klasyka</option><option>Części i akcesoria</option></select>
+   </label>
+   <label class="full">Wiadomość<textarea name="w" placeholder="Np. numer auta, model, rocznik"></textarea></label>
+   <button class="btn btn-z full" type="submit">Wyślij zapytanie</button>
+   <p class="form-ok" role="status">To podgląd strony. Na gotowej stronie wiadomość trafi prosto na kontakt@mercedesclassiccars.pl.</p>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="st-g">
+   <div><img src="img/logo.webp" width="600" height="193" alt="Filipowicz Mercedes Classic Cars" loading="lazy"><p style="margin:0;max-width:34ch">Renowacja i sprzedaż klasycznych Mercedesów z lat 1950-1975.</p></div>
+   <div><h4>Auta</h4><a href="#showroom">Showroom</a><a href="#na-zamowienie">Na zamówienie</a><a href="#kontakt">Sprzedaż Twojego auta</a></div>
+   <div><h4>Warsztat</h4><a href="#renowacja">Renowacja</a><a href="#czesci">Części i akcesoria</a><a href="#o-nas">Eventy</a></div>
+   <div><h4>Kontakt</h4><a href="tel:+48727001122">+48 727 001 122</a><a href="mailto:kontakt@mercedesclassiccars.pl">E-mail</a><span>Warszawa</span></div>
+  </div>
+  <div class="st-d">
+   <span>© 2026 Mercedes Classic Cars by Tomasz Filipowicz</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=mercedesclassiccars.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<div class="mob" id="mob">
+ <a class="btn btn-o" href="tel:+48727001122"><svg width="18" height="18"><use href="#tel"/></svg>Zadzwoń</a>
+ <a class="btn btn-z" href="#kontakt">Zapytaj o auto</a>
+</div>
+
+<script>
+(function(){
+ // menu mobilne
+ var b=document.querySelector('.burger'),m=document.getElementById('menu-m');
+ function zamknij(){document.body.classList.remove('mo');m.classList.remove('otw');b.setAttribute('aria-expanded','false');b.setAttribute('aria-label','Otwórz menu')}
+ b.addEventListener('click',function(){var o=!m.classList.contains('otw');document.body.classList.toggle('mo',o);m.classList.toggle('otw',o);b.setAttribute('aria-expanded',o);b.setAttribute('aria-label',o?'Zamknij menu':'Otwórz menu')});
+ m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',zamknij)});
+ document.addEventListener('keydown',function(e){if(e.key==='Escape')zamknij()});
+
+ // przeciąganie myszą (palec działa natywnie)
+ function drag(el,onMove){
+  var x0,s0,ruch=false,down=false;
+  el.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;down=true;ruch=false;x0=e.clientX;s0=el.scrollLeft;});
+  window.addEventListener('pointermove',function(e){if(!down)return;var dx=e.clientX-x0;if(Math.abs(dx)>4){ruch=true;el.classList.add('drag')}if(ruch){el.scrollLeft=s0-dx;e.preventDefault()}});
+  window.addEventListener('pointerup',function(){if(!down)return;down=false;if(ruch){el.classList.remove('drag');var w=el.firstElementChild?el.firstElementChild.getBoundingClientRect().width:el.clientWidth;var g=parseFloat(getComputedStyle(el).columnGap)||0;var i=Math.round(el.scrollLeft/(w+g));el.scrollTo({left:i*(w+g),behavior:'smooth'})}});
+  el.addEventListener('click',function(e){if(ruch){e.preventDefault();e.stopPropagation();ruch=false}},true);
+  el.addEventListener('dragstart',function(e){e.preventDefault()});
+ }
+ function pasek(tor,box){
+  var p=box&&box.querySelector('.tor-pasek b');if(!p)return;
+  function u(){var max=tor.scrollWidth-tor.clientWidth;var f=tor.clientWidth/tor.scrollWidth;p.style.width=(f*100)+'%';p.style.transform='translateX('+(max>0?tor.scrollLeft/max*(1/f-1)*100:0)+'%)'}
+  tor.addEventListener('scroll',u,{passive:true});window.addEventListener('resize',u);u();
+ }
+ document.querySelectorAll('[data-tor]').forEach(function(t){
+  var box=t.closest('.tor-box'),l=box.querySelector('.str.l'),p=box.querySelector('.str.p');
+  function krok(){var c=t.firstElementChild.getBoundingClientRect().width;return c+(parseFloat(getComputedStyle(t).columnGap)||0)}
+  l.addEventListener('click',function(){t.scrollBy({left:-krok(),behavior:'smooth'})});
+  p.addEventListener('click',function(){t.scrollBy({left:krok(),behavior:'smooth'})});
+  function st(){l.disabled=t.scrollLeft<4;p.disabled=t.scrollLeft>t.scrollWidth-t.clientWidth-4}
+  t.addEventListener('scroll',st,{passive:true});window.addEventListener('resize',st);st();
+  drag(t);pasek(t,box.nextElementSibling&&box.nextElementSibling.classList.contains('tor-nawi')?box.nextElementSibling:null);
+ });
+ document.querySelectorAll('[data-etapy]').forEach(function(t){drag(t);pasek(t,t.nextElementSibling)});
+
+ // galerie w kartach
+ document.querySelectorAll('[data-gal]').forEach(function(g){
+  var tor=g.querySelector('.gal-tor'),n=tor.children.length;if(n<2)return;
+  var li=document.createElement('span');li.className='licz';g.appendChild(li);
+  var mk=function(c,s,lab){var x=document.createElement('button');x.className='g-str '+c;x.setAttribute('aria-label',lab);x.innerHTML='<svg><use href="#'+s+'"/></svg>';g.appendChild(x);return x};
+  var a=mk('g-l','sl','Poprzednie zdjęcie'),z=mk('g-p','sp','Następne zdjęcie');
+  function i(){return Math.round(tor.scrollLeft/tor.clientWidth)}
+  function u(){li.textContent=(i()+1)+' / '+n}
+  a.addEventListener('click',function(e){e.stopPropagation();tor.scrollTo({left:Math.max(0,i()-1)*tor.clientWidth,behavior:'smooth'})});
+  z.addEventListener('click',function(e){e.stopPropagation();tor.scrollTo({left:((i()+1)%n)*tor.clientWidth,behavior:'smooth'})});
+  tor.addEventListener('scroll',u,{passive:true});u();
+  // mysz: przeciąganie wewnątrz galerii nie przesuwa całego rzędu
+  var x0,s0,dn=false,mv=false;
+  tor.addEventListener('pointerdown',function(e){if(e.pointerType!=='mouse')return;e.stopPropagation();dn=true;mv=false;x0=e.clientX;s0=tor.scrollLeft;tor.style.scrollSnapType='none'});
+  window.addEventListener('pointermove',function(e){if(!dn)return;var dx=e.clientX-x0;if(Math.abs(dx)>4)mv=true;if(mv){tor.scrollLeft=s0-dx;e.preventDefault()}});
+  window.addEventListener('pointerup',function(){if(!dn)return;dn=false;tor.style.scrollSnapType='';tor.scrollTo({left:Math.round(tor.scrollLeft/tor.clientWidth)*tor.clientWidth,behavior:'smooth'})});
+  tor.addEventListener('dragstart',function(e){e.preventDefault()});
+ });
+
+ // aktywna pozycja menu
+ var linki=[].slice.call(document.querySelectorAll('.nav a, .menu-m a.l'));
+ var sek=['showroom','renowacja','na-zamowienie','czesci','o-nas','kontakt'].map(function(id){return document.getElementById(id)});
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id=e.target.id;linki.forEach(function(a){a.classList.toggle('on',a.getAttribute('href')==='#'+id)})}})},{rootMargin:'-45% 0px -50% 0px'});
+ sek.forEach(function(s){io.observe(s)});
+
+ // pasek mobilny po przewinięciu za hero
+ var mob=document.getElementById('mob'),hb=document.querySelector('.hero .akcje');
+ new IntersectionObserver(function(es){mob.classList.toggle('widac',!es[0].isIntersecting&&es[0].boundingClientRect.top<0)}).observe(hb);
+
+ // formularz pokazowy
+ document.getElementById('forma').addEventListener('submit',function(e){e.preventDefault();this.querySelector('.form-ok').style.display='block'});
+})();
+</script>
+</body>
+</html>
